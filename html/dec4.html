@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- in-line vs. block elements -->
+    <!-- <p>One Word</p>Second Word
+    <a href="#">Link1</a>Link2
+    <div>
+        <img src="https://source.unsplash.com/100x200/?nature" alt="">
+    </div>
+    <div>
+        <img src="https://source.unsplash.com/100x200/?pizza" alt="">
+    </div> -->
+    <!-- 
+        inline: a, img, input, label, span etc
+        block: div, p, h1, h2 ... h6, li etc
+    -->
+
+    <form align="center" action="">
+        <p>Gender:</p>
+        <div>
+            <input type="radio" autofocus name="gender" id="female"> 
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="male"> 
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="other"> 
+            <label for="other">Other</label>
+        </div>
+        <p>Which is the capital of Gujarat?</p>
+        <div>
+            <input type="radio" name="capital" id="opt1"> 
+            <label for="opt1">Ahmedabad</label>
+            <input type="radio" name="capital" id="opt2"> 
+            <label for="opt2">Surat</label>
+            <input type="radio" name="capital" id="opt3"> 
+            <label for="opt3">Gandhinagar</label>
+            <input type="radio" name="capital" id="opt4"> 
+            <label for="opt4">Rajkot</label>
+        </div>
+        <div>
+            <!-- 5000 <input min="5000" max="50000" type="range" name="price" id=""> 50000 -->
+            <input type="range" value="20000" min="5000" max="50000" step="1000" oninput="this.nextElementSibling.value = this.value">
+            <output>20000</output>
+        </div>
+        <div>
+            <!-- <input type="tel" name="" id="" placeholder="987654321" readonly> -->
+            <input type="tel" name="" id="" value="987654321" readonly>
+        </div>
+        <div>
+            <input type="url" name="" id="" placeholder="Your Website">
+        </div>
+        <div>
+            <textarea wrap="soft" name="message" id="" cols="30" rows="5" maxlength="100"></textarea>
+            <!-- <textarea wrap="hard" name="message" id="" cols="30" rows="5" maxlength="100"></textarea> -->
+        </div>
+        <div>
+            <select name="country" id="">
+                <option value="1">Canada</option>
+                <option selected value="91">India</option>
+                <option value="44">UK</option>
+                <option value="1">US</option>
+                <optgroup label="Other Countries">
+                    <option value="">Brazil</option>
+                    <option value="">Germany</option>
+                    <option value="">Italy</option>
+                    <option value="">Poland</option>
+                    <option value="">South Korea</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <input type="submit" value="Send">
+        </div>
+    </form>
+</body>
+</html>
+
+<!-- Next Class: IDs & Classes, Table -->
